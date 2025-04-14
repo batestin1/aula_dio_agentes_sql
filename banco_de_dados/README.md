@@ -21,7 +21,7 @@ Este projeto está estruturado em torno de um banco de dados fictício, contendo
 4. **Pagamentos** – Registra os pagamentos realizados pelos clientes, com informações sobre o valor e a data de pagamento.
 
 ### **Relacionamentos entre as Tabelas**
-![delta](SQL_GENAI/banco_de_dados/img/DER.png)
+![delta](./banco_de_dados/img/DER.png)
 
 
 As tabelas possuem as seguintes relações:
