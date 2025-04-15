@@ -4,11 +4,19 @@
 <h3> <p align="center">Massa de Dados Fictícia - DIOBANK </p> </h3>
 <h3> <p align="center"> ================= </p> </h3>
 
+
 ## **Visão Geral do Projeto**
 
-Este repositório contém uma massa de dados fictícia que foi desenvolvida como parte de um curso prático na plataforma DIO.me (https://www.dio.me/pt). O projeto é uma simulação de um banco financeiro, onde você irá interagir com um banco de dados MySQL utilizando comandos SQL. O objetivo principal deste exercício é praticar consultas SQL com base em um cenário realista de um banco financeiro.
+Neste segmento, criamos um script capaz de gerar uma massa de dados fictícia do banco ficiticio DioBank. O propósito é gerar arquivos relacionados emm CSV e também em ingestar em um banco de dados MYSQL configurado localmente. Este script foi desenvolvida como parte de um curso prático na plataforma DIO.me (https://www.dio.me/pt). O projeto é uma simulação de um banco financeiro, onde você irá interagir com um banco de dados MySQL utilizando comandos SQL.
+
+## **Pré-requisitos**
+
+1. Instale os pacotes do requirements.txt
+2. Instale e ative um banco de dados MySQL em seu computador pessoal. 
+3. Configure as credenciais de acesso no arquivo .env
 
 ### **Objetivo do Projeto**
+
 O foco deste projeto é gerar, manipular e consultar dados fictícios que simulam as operações de um banco. Ele foi desenvolvido como parte do curso de "Agentes de IA para Consultas SQL", onde os alunos terão a oportunidade de entender como funcionam as consultas em bancos de dados relacionais, utilizando o MySQL para gerir uma base de dados de clientes, endereços, pagamentos e movimentações financeiras.
 
 ## **Estrutura do Projeto**

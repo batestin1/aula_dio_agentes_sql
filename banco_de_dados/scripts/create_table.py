@@ -1,27 +1,22 @@
-import json
 import csv
 import random
 import mysql.connector
 from faker import Faker
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 
-# Carregar credenciais do arquivo JSON
-with open("parametros/arquivo.json", "r") as file:
-    var = json.load(file)
-
-host = var['host']
-user = var['user']
-password = var['password']
-database = var['schema']
-port = int(var['port'])
-n = int(var['number'])
+# Carregar credenciais do MYSQL e declarar variaveis
+load_dotenv()
+database = os.getenv("MYSQL_DB")
+n = 1000
 
 # Conectar ao MySQL (sem especificar o banco de dados para criar o banco)
 conn = mysql.connector.connect(
-    host=host,
-    user=user,
-    password=password,
-    port=port
+    host=os.getenv("MYSQL_HOST"),
+    user=os.getenv("MYSQL_USER"),,
+    password= os.getenv("MYSQL_PASSWORD"),
+    port=os.getenv("MYSQL_PORT")
 )
 
 cursor = conn.cursor()
